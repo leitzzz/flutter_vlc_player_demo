@@ -39,10 +39,9 @@ class _PlayerState extends State<PlayerVlcPlayer> {
     });
 
     // use to detect some player events.
-    // example:
-    // debug: ---[{type:EventType.TimeChanged,buffering:0.0,timeChanged:683600,lengthChanged:683600,positionChanged:0.0,voutCount:683600,esChangedType:683600,esChangedID:0,seekable:true,pausable:true,recording:true,recordPath:null}]--
     _controller.onEvent.listen((event) {
-      // response example: VLCState.Buffering, VLCState.Playing, VLCState.Opening, VLCState.Ended, VLCState.Stopped, VLCState.Error
+      // example
+      // debug: ---[{type:EventType.TimeChanged,buffering:0.0,timeChanged:683600,lengthChanged:683600,positionChanged:0.0,voutCount:683600,esChangedType:683600,esChangedID:0,seekable:true,pausable:true,recording:true,recordPath:null}]--
       // print("debug: ---[$event]-- ");
     });
 
